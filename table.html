@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta charset="utf-8" />
+  <title>Demo - Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+  <link rel="apple-touch-icon" href="pages/ico/60.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta content="" name="description" />
+  <meta content="" name="author" />
+  <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="assets/plugins/nvd3/nv.d3.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="assets/plugins/mapplic/css/mapplic.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/rickshaw/rickshaw.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="assets/plugins/jquery-metrojs/MetroJs.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+  <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
+  <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="fixed-header dashboard">
+<!-- BEGIN SIDEBPANEL-->
+<nav class="page-sidebar" data-pages="sidebar">
+  <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
+  <div class="sidebar-overlay-slide from-top" id="appMenu">
+    <div class="row">
+      <div class="col-xs-6 no-padding">
+        <a href="#" class="p-l-40"><img src="assets/img/demo/social_app.svg" alt="socail">
+        </a>
+      </div>
+      <div class="col-xs-6 no-padding">
+        <a href="#" class="p-l-10"><img src="assets/img/demo/email_app.svg" alt="socail">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 m-t-20 no-padding">
+        <a href="#" class="p-l-40"><img src="assets/img/demo/calendar_app.svg" alt="socail">
+        </a>
+      </div>
+      <div class="col-xs-6 m-t-20 no-padding">
+        <a href="#" class="p-l-10"><img src="assets/img/demo/add_more.svg" alt="socail">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
+  <!-- BEGIN SIDEBAR MENU HEADER-->
+  <div class="sidebar-header">
+    <img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
+    <div class="sidebar-header-controls">
+      <!--<button type="button" class="btn btn-xs sidebar-slide-toggle btn-link " data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
+    </button>-->
+      <button type="button" class="btn btn-link d-lg-inline-block d-xlg-inline-block m-l-35 d-md-inline-block d-sm-none d-none" data-toggle-pin="sidebar"><i class="fa fs-12"></i>
+      </button>
+    </div>
+  </div>
+  <!-- END SIDEBAR MENU HEADER-->
+  <!-- START SIDEBAR MENU -->
+  <div class="sidebar-menu">
+    <!-- BEGIN SIDEBAR MENU ITEMS-->
+    <ul class="menu-items">
+      <li class="m-t-30 ">
+        <a href="home.html" class="detailed">
+          <span class="title">Home</span>
+        </a>
+        <span class="bg-success icon-thumbnail"><i class="pg-home"></i></span>
+      </li>
+      <li class="">
+        <a href="table.html"><span class="title">Conciliaciones</span></a>
+        <span class="icon-thumbnail"><i class="fa fa-dollar"></i></span>
+      </li>
+      <li class="">
+        <a href="form.html"><span class="title">Ingreso</span></a>
+        <span class="icon-thumbnail"><i class="fa fa-pencil-square-o"></i></span>
+      </li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <!-- END SIDEBAR MENU -->
+</nav>
+<!-- END SIDEBAR -->
+<!-- END SIDEBPANEL-->
+<!-- START PAGE-CONTAINER -->
+<div class="page-container ">
+  <!-- START HEADER -->
+  <div class="header ">
+    <!-- START MOBILE SIDEBAR TOGGLE -->
+    <a href="#" class="btn-link toggle-sidebar d-lg-none pg pg-menu" data-toggle="sidebar">
+    </a>
+    <!-- END MOBILE SIDEBAR TOGGLE -->
+    <div class="">
+      <div class="brand inline   ">
+        <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
+      </div>
+
+    </div>
+    <div class="d-flex align-items-center">
+      <!-- START User Info-->
+      <div class="pull-left p-r-10 fs-14 font-heading d-lg-block d-none">
+        <span class="semi-bold">David</span> <span class="text-master">Nest</span>
+      </div>
+      <div class="dropdown pull-right d-lg-block d-none">
+        <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="thumbnail-wrapper d32 circular inline">
+              <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+              </span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
+          <a href="#" class="clearfix bg-master-lighter dropdown-item">
+            <span class="pull-left">Logout</span>
+            <span class="pull-right"><i class="pg-power"></i></span>
+          </a>
+        </div>
+      </div>
+      <!-- END User Info-->
+    </div>
+  </div>
+  <!-- END HEADER -->
+  <!-- START PAGE CONTENT WRAPPER -->
+  <div class="page-content-wrapper ">
+    <!-- START PAGE CONTENT -->
+    <div class="content sm-gutter">
+      <!-- START CONTAINER FLUID -->
+      <div class="container-fluid padding-25 sm-padding-10">
+        <div class="row">
+          <div class="card card-default">
+            <div class="card-header ">
+              <div class="card-title">
+                Filtros
+              </div>
+            </div>
+            <div class="card-body">
+              <form id="form-project" role="form" autocomplete="off" novalidate>
+                <p>Basic Information</p>
+                <div class="form-group-attached">
+                  <div class="form-group form-group-default form-group-default-select2 ">
+                    <label class="bank">Bank </label>
+                    <select id="bank" name="bank" class="full-width" data-placeholder="Seleccionar un banco" data-init-plugin="select2">
+                      <option value="T">Produbanco</option>
+                      <option value="J">JPBank</option>
+                      <option value="J">Pacifico Honduras</option>
+                    </select>
+                  </div>
+                  <div class="row clearfix">
+                    <div class="col-md-6">
+                      <div class="form-group form-group-default form-group-default-select2 ">
+                        <label class="account">Account </label>
+                        <select id="account" name="account" class="full-width" data-placeholder="Seleccionar una cuenta" data-init-plugin="select2">
+                          <option value="T">SAG-324</option>
+                          <option value="J">SAG-2134</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group form-group-default form-group-default-select2 required">
+                        <label class="family">Family </label>
+                        <select id="family" name="family" class="full-width" data-placeholder="Seleccionar tipo" data-init-plugin="select2" required>
+                          <option value="T">AIP</option>
+                          <option value="J">JPA</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="m-t-10">Advanced Information</p>
+                <div class="form-group-attached">
+                  <div class="form-group form-group-default form-group-default-select2 required">
+                    <label class="">Type </label>
+                    <select id="sucursal_id" class="full-width" name="sucursal_id" data-placeholder="Seleccionar tipo" data-init-plugin="select2">
+                      <option value="T"> Ingreso </option>
+                      <option value="J"> Egreso </option>
+
+                    </select>
+                  </div>
+                  <div class="row clearfix">
+                    <div class="col-md-6">
+                      <div class="form-group form-group-default form-group-default-select2">
+                        <label>Tags</label>
+                        <select class=" full-width" data-init-plugin="select2" multiple>
+                          <option value="Jim">Salarios</option>
+                          <option value="Jim">Servicios Básicos</option>
+                          <option value="Jim">Mantenimientos</option>
+                          <option value="John">Compras Online</option>
+                          <option value="Lucy">Gastos Corporativos</option>
+                          <option value="Lucy">Impuestos</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group form-group-default input-group col-md-12">
+                        <div class="form-input-group">
+                          <label>Month</label>
+                          <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+                        </div>
+                        <div class="input-group-append ">
+                          <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <button class="btn btn-success" type="submit">Submit</button>
+                <button class="btn btn-default"><i class="pg-close"></i> Clear</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header ">
+              <div class="card-title">Conciliaciones
+              </div>
+              <div class="tools">
+                <a class="collapse" href="javascript:;"></a>
+                <a class="config" data-toggle="modal" href="#grid-config"></a>
+                <a class="reload" href="javascript:;"></a>
+                <a class="remove" href="javascript:;"></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive" style="overflow-x: scroll">
+                <table class="table table-hover table-condensed" id="condensedTable" style="table-layout: auto;">
+                  <thead>
+                  <tr>
+                    <!-- NOTE * : Inline Style Width For Table Cell is Required as it may differ from user to user
+                                    Comman Practice Followed
+                                    -->
+                    <th >Descripción</th>
+                    <th >Grupo</th>
+                    <th >Familia</th>
+                    <th class="text-center" >Jan -19</th>
+                    <th class="text-center" >Feb -19</th>
+                    <th class="text-center" >Mar -19</th>
+                    <th class="text-center" >Apr -19</th>
+                    <th class="text-center" >May -19</th>
+                    <th class="text-center" >Jun -19</th>
+                    <th class="text-center" >Jul -19</th>
+                    <th class="text-center" >Aug -19</th>
+                    <th class="text-center" >Sep -19</th>
+                    <th class="text-center" >Oct -19</th>
+                    <th class="text-center" >Nov -19</th>
+                    <th class="text-center" >Dec -19</th>
+                    <th class="text-center" >Total</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td class="v-align-left">Comisiones</td>
+                    <td class="v-align-middle semi-bold">Corporativo</td>
+                    <td class="v-align-middle semi-bold">AIG</td>
+                    <td class="text-right">$ 100,000.00</td>
+                    <td class="text-right">$ 6,000.00</td>
+                    <td class="text-right">$ 78,000.00</td>
+                    <td class="text-right">$ 22,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 3,000.00</td>
+                    <td class="text-right">$ 7,000.00</td>
+                    <td class="text-right">$ 5,005.00</td>
+                    <td class="text-right">$ 8,000.00</td>
+                    <td class="text-right">$ 25,078.00</td>
+                    <td class="text-right">$ 14,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 12,470.00</td>
+                  </tr>
+                  <tr>
+                    <td class="v-align-left">Gastos</td>
+                    <td class="v-align-middle semi-bold">Corporativo</td>
+                    <td class="v-align-middle semi-bold">AIG</td>
+                    <td class="text-right">$ 600.00</td>
+                    <td class="text-right">$ 5,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 12,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 1,020.00</td>
+                    <td class="text-right">$ 10,300.00</td>
+                    <td class="text-right">$ 15,000.00</td>
+                    <td class="text-right">$ 88,000.00</td>
+                    <td class="text-right">$ 90,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 12,000.00</td>
+                  </tr>
+                  <tr>
+                    <td class="v-align-left">Corp</td>
+                    <td class="v-align-middle semi-bold">Corporativo</td>
+                    <td class="v-align-middle semi-bold">AIG</td>
+                    <td class="text-right">$ 100,000.00</td>
+                    <td class="text-right">$ 6,000.00</td>
+                    <td class="text-right">$ 78,000.00</td>
+                    <td class="text-right">$ 22,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 3,000.00</td>
+                    <td class="text-right">$ 7,000.00</td>
+                    <td class="text-right">$ 5,005.00</td>
+                    <td class="text-right">$ 8,000.00</td>
+                    <td class="text-right">$ 25,078.00</td>
+                    <td class="text-right">$ 14,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 12,470.00</td>
+                  </tr>
+                  <tr>
+                    <td class="v-align-left">Prestamos</td>
+                    <td class="v-align-middle semi-bold">Corporativo</td>
+                    <td class="v-align-middle semi-bold">AIG</td>
+                    <td class="text-right">$ 600.00</td>
+                    <td class="text-right">$ 5,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 12,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 1,020.00</td>
+                    <td class="text-right">$ 10,300.00</td>
+                    <td class="text-right">$ 15,000.00</td>
+                    <td class="text-right">$ 88,000.00</td>
+                    <td class="text-right">$ 90,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 1,000.00</td>
+                    <td class="text-right">$ 12,000.00</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END CONTAINER FLUID -->
+    </div>
+    <!-- END PAGE CONTENT -->
+    <!-- START COPYRIGHT -->
+    <!-- START CONTAINER FLUID -->
+    <!-- START CONTAINER FLUID -->
+    <div class=" container-fluid  container-fixed-lg footer">
+      <div class="copyright sm-text-center">
+        <p class="small no-margin pull-left sm-pull-reset">
+          <span class="hint-text">Copyright &copy; 2017 </span>
+          <span class="font-montserrat">REVOX</span>.
+          <span class="hint-text">All rights reserved. </span>
+          <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> <span class="muted">|</span> <a href="#" class="m-l-10">Privacy Policy</a></span>
+        </p>
+        <p class="small no-margin pull-right sm-pull-reset">
+          Hand-crafted <span class="hint-text">&amp; made with Love</span>
+        </p>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- END COPYRIGHT -->
+  </div>
+  <!-- END PAGE CONTENT WRAPPER -->
+</div>
+<!-- END PAGE CONTAINER -->
+<!-- BEGIN VENDOR JS -->
+<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="assets/plugins/popper/umd/popper.min.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+<script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="assets/plugins/select2/js/select2.full.min.js"></script>
+<script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+<script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/lib/d3.v3.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/nv.d3.min.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/utils.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/tooltip.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/interactiveLayer.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/models/axis.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/models/line.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/models/lineWithFocusChart.js" type="text/javascript"></script>
+<script src="assets/plugins/mapplic/js/hammer.min.js"></script>
+<script src="assets/plugins/mapplic/js/jquery.mousewheel.js"></script>
+<script src="assets/plugins/mapplic/js/mapplic.js"></script>
+<script src="assets/plugins/rickshaw/rickshaw.min.js"></script>
+<script src="assets/plugins/jquery-metrojs/MetroJs.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="assets/plugins/skycons/skycons.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
+<script src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/plugins/datatables-responsive/js/datatables.responsive.js"></script>
+<script type="text/javascript" src="assets/plugins/datatables-responsive/js/lodash.min.js"></script>
+<!-- END VENDOR JS -->
+<!-- BEGIN CORE TEMPLATE JS -->
+<!-- BEGIN CORE TEMPLATE JS -->
+<script src="pages/js/pages.js"></script>
+<!-- END CORE TEMPLATE JS -->
+<!-- BEGIN PAGE LEVEL JS -->
+<script src="assets/js/scripts.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL JS -->
+<!-- END CORE TEMPLATE JS -->
+<!-- BEGIN PAGE LEVEL JS -->
+<script src="assets/js/dashboard.js" type="text/javascript"></script>
+<script src="assets/js/scripts.js" type="text/javascript"></script>
+<script>
+
+  $(document).ready(function() {
+    var table = $('#condensedTable');
+
+    var settings = {
+      "sDom": "t",
+      "destroy": true,
+      "paging": false,
+      "scrollCollapse": true
+    };
+
+    table.dataTable(settings);
+  });
+</script>
+<!-- END PAGE LEVEL JS -->
+</body>
+</html>
