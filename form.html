@@ -75,7 +75,7 @@
             <a href="home.html" class="detailed">
               <span class="title">Home</span>
             </a>
-            <span class="bg-success icon-thumbnail"><i class="pg-home"></i></span>
+            <span class="icon-thumbnail"><i class="pg-home"></i></span>
           </li>
           <li class="">
             <a href="table.html"><span class="title">Conciliaciones</span></a>
@@ -83,8 +83,12 @@
           </li>
           <li class="">
             <a href="form.html"><span class="title">Ingreso</span></a>
-            <span class="icon-thumbnail"><i class="fa fa-pencil-square-o"></i></span>
+            <span class="bg-success icon-thumbnail"><i class="fa fa-pencil-square-o"></i></span>
           </li>
+            <li class="">
+                <a href="timeline.html"><span class="title">Bitácora</span></a>
+                <span class="icon-thumbnail"><i class="fa fa-calendar-times-o"></i></span>
+            </li>
         </ul>
         <div class="clearfix"></div>
       </div>
@@ -147,8 +151,7 @@
                   </h5>
                   <form class="" role="form">
                     <div class="row">
-                      <div class="col-6">
-                        <div class="form-group form-group-default form-group-default-select2 ">
+                        <div class="form-group form-group-default form-group-default-select2 col-sm-6">
                           <label class="bank">Bank </label>
                           <select id="bank" name="bank" class="full-width" data-placeholder="Seleccionar un banco" data-init-plugin="select2">
                             <option value="T">Produbanco</option>
@@ -156,29 +159,23 @@
                             <option value="J">Pacifico Honduras</option>
                           </select>
                         </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="form-group form-group-default form-group-default-select2 ">
+                        <div class="form-group form-group-default form-group-default-select2 col-sm-6">
                           <label class="account">Account </label>
                           <select id="account" name="account" class="full-width" data-placeholder="Seleccionar una cuenta" data-init-plugin="select2">
                             <option value="T">SAG-324</option>
                             <option value="J">SAG-2134</option>
                           </select>
                         </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-6">
-                        <div class="form-group form-group-default form-group-default-select2 required">
+
+                        <div class="form-group form-group-default form-group-default-select2 required col-sm-6">
                           <label class="family">Family </label>
                           <select id="family" name="family" class="full-width" data-placeholder="Seleccionar tipo" data-init-plugin="select2" required>
                             <option value="T">AIP</option>
                             <option value="J">JPA</option>
                           </select>
                         </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="form-group form-group-default form-group-default-select2">
+
+                        <div class="form-group form-group-default form-group-default-select2 col-sm-6">
                           <label class="member">Family Member </label>
                           <select id="member" name="member" class="full-width" data-placeholder="Seleccionar tipo" data-init-plugin="select2">
                             <option value="T">Pepito Galan</option>
@@ -186,45 +183,43 @@
                             <option value="J">Pamela Galon</option>
                           </select>
                         </div>
-                      </div>
+                      <div class="form-group form-group-default form-group-default-select2 required col-sm-12">
+                        <label class="">Type </label>
+                        <select id="sucursal_id" class="full-width" name="sucursal_id" data-placeholder="Seleccionar tipo" data-init-plugin="select2">
+                          <option value="T"> Ingreso </option>
+                          <option value="J"> Egreso </option>
 
-                    </div>
-                    <div class="form-group form-group-default form-group-default-select2 required">
-                      <label class="">Type </label>
-                      <select id="sucursal_id" class="full-width" name="sucursal_id" data-placeholder="Seleccionar tipo" data-init-plugin="select2">
-                        <option value="T"> Ingreso </option>
-                        <option value="J"> Egreso </option>
-
-                      </select>
-                    </div>
-                    <div class="form-group form-group-default required ">
-                      <label>Description</label>
-                      <input type="text" class="form-control" placeholder="ej: Comisiones por transferencias" required>
-                    </div>
-                    <div class="form-group form-group-default form-group-default-select2">
-                      <label>Tags</label>
-                      <select class=" full-width" data-init-plugin="select2" multiple>
-                        <option value="Jim">Salarios</option>
-                        <option value="Jim">Servicios Básicos</option>
-                        <option value="Jim">Mantenimientos</option>
-                        <option value="John">Compras Online</option>
-                        <option value="Lucy">Gastos Corporativos</option>
-                        <option value="Lucy">Impuestos</option>
-                      </select>
-                    </div>
-                    <div class="form-group form-group-default input-group col-md-12">
-                      <div class="form-input-group">
-                        <label>Month</label>
-                        <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+                        </select>
                       </div>
-                      <div class="input-group-append ">
-                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                      <div class="form-group form-group-default required col-sm-12">
+                        <label>Description</label>
+                        <input type="text" class="form-control" placeholder="ej: Comisiones por transferencias" required>
                       </div>
-                    </div>
-                    <div class="form-group form-group-default">
-                      <label>Cost</label>
-                      <span class="help">e.g. "$100.50"</span>
-                      <input type="text" data-a-sign="$ " class="autonumeric form-control">
+                      <div class="form-group form-group-default form-group-default-select2 col-sm-12">
+                        <label>Tags</label>
+                        <select class=" full-width" data-init-plugin="select2" multiple>
+                          <option value="Jim">Salarios</option>
+                          <option value="Jim">Servicios Básicos</option>
+                          <option value="Jim">Mantenimientos</option>
+                          <option value="John">Compras Online</option>
+                          <option value="Lucy">Gastos Corporativos</option>
+                          <option value="Lucy">Impuestos</option>
+                        </select>
+                      </div>
+                      <div class="form-group form-group-default input-group col-sm-12">
+                        <div class="form-input-group">
+                          <label>Month</label>
+                          <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+                        </div>
+                        <div class="input-group-append ">
+                          <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        </div>
+                      </div>
+                      <div class="form-group form-group-default col-sm-12">
+                        <label>Cost</label>
+                        <span class="help">e.g. "$100.50"</span>
+                        <input type="text" data-a-sign="$ " class="autonumeric form-control">
+                      </div>
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group text-right">
