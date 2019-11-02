@@ -147,46 +147,59 @@
                   </h5>
                   <form class="" role="form">
                     <div class="row">
+                      <div class="form-group form-group-default form-group-default-select2 col-sm-6">
+                        <label class="bank">Group </label>
+                        <select id="group" name="group" class="full-width" data-placeholder="Seleccionar un banco" data-init-plugin="select2">
+                          <option value="T">Group A</option>
+                          <option value="T">Group B</option>
+                          <option value="T">Group C</option>
+                          <option value="T">Group D</option>
+                        </select>
+                      </div>
                         <div class="form-group form-group-default form-group-default-select2 col-sm-6">
                           <label class="bank">Bank </label>
                           <select id="bank" name="bank" class="full-width" data-placeholder="Seleccionar un banco" data-init-plugin="select2">
-                            <option value="T">Produbanco</option>
-                            <option value="J">JPBank</option>
-                            <option value="J">Pacifico Honduras</option>
+                            <option value="T">Bank 1</option>
+                            <option value="J">Bank 2</option>
+                            <option value="J">Bank 3</option>
+                            <option value="J">Bank 4</option>
                           </select>
                         </div>
                         <div class="form-group form-group-default form-group-default-select2 col-sm-6">
                           <label class="account">Account </label>
                           <select id="account" name="account" class="full-width" data-placeholder="Seleccionar una cuenta" data-init-plugin="select2">
-                            <option value="T">SAG-324</option>
-                            <option value="J">SAG-2134</option>
+                            <option value="T">Account 1</option>
+                            <option value="J">Account 2</option>
+                            <option value="J">Account 3</option>
+                            <option value="J">Account 4</option>
+                            <option value="J">Account 5</option>
                           </select>
                         </div>
 
                         <div class="form-group form-group-default form-group-default-select2 required col-sm-6">
                           <label class="family">Family </label>
                           <select id="family" name="family" class="full-width" data-placeholder="Seleccionar tipo" data-init-plugin="select2" required>
-                            <option value="T">AIP</option>
-                            <option value="J">JPA</option>
+                            <option value="T">Fam 1</option>
+                            <option value="J">Fam 2</option>
+                            <option value="J">Fam 3</option>
                           </select>
                         </div>
 
                         <div class="form-group form-group-default form-group-default-select2 col-sm-6">
                           <label class="member">Family Member </label>
                           <select id="member" name="member" class="full-width" data-placeholder="Seleccionar tipo" data-init-plugin="select2">
-                            <option value="T">Pepito Galan</option>
-                            <option value="J">Juanito Ballas</option>
-                            <option value="J">Pamela Galon</option>
+                            <option value="T">FM 1</option>
+                            <option value="J">FM 2</option>
+                            <option value="J">FM 3</option>
                           </select>
                         </div>
-                      <div class="form-group form-group-default form-group-default-select2 required col-sm-12">
+                      <!--<div class="form-group form-group-default form-group-default-select2 required col-sm-12">
                         <label class="">Type </label>
                         <select id="sucursal_id" class="full-width" name="sucursal_id" data-placeholder="Seleccionar tipo" data-init-plugin="select2">
                           <option value="T"> Ingreso </option>
                           <option value="J"> Egreso </option>
-
                         </select>
-                      </div>
+                      </div>-->
                       <div class="form-group form-group-default required col-sm-12">
                         <label>Description</label>
                         <input type="text" class="form-control" placeholder="ej: Comisiones por transferencias" required>
